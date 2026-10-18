@@ -100,4 +100,68 @@ dialog{border-radius:10px}
  .category-card{padding:16px}
  .page-heading h1{font-size:24px}
 }
+/* Readable controls, with a larger mobile scale. Report typography stays independent. */
+@media screen{
+ body{font-size:15px}
+ label,.page-heading p,.panel-heading p,.selection-bar,.text-button,.help,.notice{font-size:13px}
+ .student-chip{font-size:14px}
+ .student-chip small,.record-body time{font-size:12px}
+ .category-chip{font-size:13px;padding:11px 6px}
+ .category-chip b{font-size:18px}
+ .stat-label,.stat .stat-label{font-size:13px}
+ .stat small{font-size:12px}
+ .record-body strong,.record-body p{font-size:14px}
+ .record-score button{font-size:12px}
+ .record-score b{font-size:19px}
+ .student-table td{font-size:15px}
+ .student-table th{font-size:13px}
+ .category-card p,.step-pill,.segmented button{font-size:13px}
+ .saved,.section-label small{font-size:12px}
+ .section-label{font-size:14px}
+ dialog p{font-size:15px}
+ .history-filter input{font-size:14px;max-width:165px}
+ .mobile-tools button{font-size:13px}
+}
+@media screen and (max-width:600px){
+ body{font-size:16px}
+ h2{font-size:19px}
+ h3{font-size:17px}
+ .page-heading h1{font-size:26px}
+ header .eyebrow,header p{font-size:13px;letter-spacing:.3px}
+ header button{font-size:14px}
+ label,.page-heading p,.panel-heading p,.selection-bar,.text-button,.help,.notice{font-size:14px}
+ input,select,.score-date input{font-size:16px}
+ .student-picker{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .student-chip{font-size:16px;padding:11px 5px}
+ .student-chip small{font-size:12px}
+ .selection-bar button{font-size:14px;margin-left:10px}
+ .category-chip{font-size:14px;padding:11px 4px;line-height:1.6}
+ .category-chip b{font-size:20px}
+ .stat .stat-label,.stat-label{font-size:14px}
+ .stat strong{font-size:29px}
+ .stat small{font-size:13px}
+ .section-label{font-size:16px}
+ .section-label small{font-size:13px}
+ .record-body strong,.record-body p{font-size:15px}
+ .record-body time{font-size:12px}
+ .record-score b{font-size:20px}
+ .record-score button{font-size:14px;padding:5px 0}
+ .history-filter{font-size:14px}
+ .history-filter input{font-size:16px;max-width:165px}
+ .mobile-tools{gap:8px;flex-wrap:wrap}
+ .mobile-tools button{font-size:13px;padding:8px 10px}
+ .toolbar button,.segmented button{font-size:14px}
+ .category-card .text-button{font-size:14px}
+ .category-card p{font-size:13px}
+ .category-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .sidebar nav button{font-size:12px}
+ .sidebar nav button span{font-size:22px}
+ footer{font-size:12px}
+ .empty{font-size:14px}
+}
+@media screen and (max-width:360px){
+ .score-date{grid-template-columns:1fr}
+ .history-filter input{margin-left:0;max-width:100%}
+ .category-cards{grid-template-columns:1fr}
+}
 @media print{main{margin:0;padding:0;max-width:none}}

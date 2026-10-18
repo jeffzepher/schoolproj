@@ -1,4 +1,4 @@
-const CACHE='xingce-v2';
+const CACHE='xingce-v3';
 const FILES=['./','./index.html','./style.css','./theme.css','./app.js','./core.js','./manifest.webmanifest','./icon.svg','./icon-192.png','./icon-512.png','./vendor/xlsx.full.min.js'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('xingce-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});
