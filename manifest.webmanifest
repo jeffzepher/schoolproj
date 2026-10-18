@@ -1,0 +1,1 @@
+{"id":"./","name":"星册 · 班级积分","short_name":"星册","description":"学生管理、日常积分与班级报表","lang":"zh-CN","start_url":"./","scope":"./","display":"standalone","background_color":"#fafbf7","theme_color":"#245c49","icons":[{"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},{"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
